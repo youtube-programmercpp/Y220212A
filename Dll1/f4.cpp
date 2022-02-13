@@ -1,6 +1,5 @@
 #include "pch.h"
-#pragma comment(lib, "Dll1")
-int __declspec(dllexport) f4(char a, char b)
+void __declspec(dllexport) f4(char a, char b, char& c)
 {
-	return a + b;
+	c = a + b;
 }
